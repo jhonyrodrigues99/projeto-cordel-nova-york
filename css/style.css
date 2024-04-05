@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --titulo: "DM Sans", sans-serif;
+    --conteudo: "Dancing Script", cursive;
+    --normal: 'Times New Roman', Times, serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -17,13 +25,17 @@ header {
     background-color: rgb(71, 69, 69);
     color: white;
     text-align: center;
+    font-size: 50px;
 }
 
 .cabecalho {
     height: 60px;
-    width: 500px;
+    width: 550px;
     padding-top: 20px;
+    padding-bottom: 15px;
     background-color: black;
+    font-family: var(--titulo);
+    letter-spacing: 5px;
 
     position: absolute;
     top: 50%;
@@ -35,12 +47,77 @@ section {
     padding: 120px 60px 120px 60px;
     background-color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 2em;
     letter-spacing: 2px;
+}
+
+h2, footer {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.conteudo p {
+    font-family: var(--conteudo);
 }
 
 #sectionone {
     background-color: white;
     color: black;
+}
+
+.imagem {
+    height: 400px;
+    background-color: black;
+    color: white;
+    font-family: var(--titulo);
+    letter-spacing: 5px;
+
+    position: relative;
+}
+
+.imagem p {
+    font-size: 50px;
+}
+
+div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img01 {
+    background-image: url(../imagens/ny-de-cima-noite.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#img02 {
+    background-image: url(../imagens/estatua-liberdade-ny.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#img03 {
+    background-image: url(../imagens/escurecendo-ny.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#img04 {
+    background-image: url(../imagens/transito-ny.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+footer {
+    text-align: center;
+    background-color: darkgray;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
 }
